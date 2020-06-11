@@ -1,0 +1,64 @@
+.nav-container {
+    border-bottom: 2px solid red;
+}
+
+.navbar-collapse {
+    position: absolute;
+    right: 0;
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-collapse {
+        position: absolute;
+        right: 0;
+    }
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .navbar-collapse {
+        position: static;
+    }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-collapse {
+        position: static;
+    }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-collapse {
+        position: static;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar-collapse {
+        position: absolute;
+        right: 10px;
+    }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .navbar-collapse {
+        position: absolute;
+        right: 10px;
+    }
+}

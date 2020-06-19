@@ -1,4 +1,5 @@
-$background-url: url("/images/about_bg.png");
+$background-url: url("/portfolio/images/about_bg.png");
+// $background-url: url("/images/about_bg.png");
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -7,6 +8,20 @@ $background-url: url("/images/about_bg.png");
         background-position: center center;
         background-attachment: fixed;
         height: 100vh;
+        width: 100vw;
+        background-size: cover;
+    }
+
+    .intro-container {
+        position: absolute;
+        border: 2px solid white;
+        top: 30%;
+        left: 30%;
+    }
+
+    .img-item {
+        height: 200px;
+        width: 200px;
     }
 }
 

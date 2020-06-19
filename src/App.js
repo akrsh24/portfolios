@@ -3,6 +3,7 @@ import {
   BrowserRouter,
   Switch
 } from 'react-router-dom';
+import './App.css';
 import NavBar from './navbar/NavBar';
 import Routes from './routes/Routes';
 

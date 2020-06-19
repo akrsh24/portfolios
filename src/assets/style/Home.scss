@@ -7,21 +7,20 @@ $background-url: url("/portfolio/images/about_bg.png");
         background: $background-url;
         background-position: center center;
         background-attachment: fixed;
-        height: 100vh;
+        height: calc(100vh - 66px);
         width: 100vw;
         background-size: cover;
     }
 
     .intro-container {
         position: absolute;
-        border: 2px solid white;
         top: 30%;
         left: 30%;
     }
 
     .img-item {
-        height: 200px;
-        width: 200px;
+        height: 100px;
+        width: 100px;
     }
 }
 
@@ -31,14 +30,36 @@ $background-url: url("/portfolio/images/about_bg.png");
         background: $background-url;
         background-position: center center;
         background-attachment: fixed;
-        height: 100vh;
+        height: calc(100vh - 66px);
         width: 100vw;
         background-size: cover;
     }
 
     .intro-container {
         position: absolute;
-        border: 2px solid white;
+        top: 30%;
+        left: 30%;
+    }
+
+    .img-item {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .home-container {
+        background: $background-url;
+        background-position: center center;
+        background-attachment: fixed;
+        height: calc(100vh - 66px);
+        width: 100vw;
+        background-size: cover;
+    }
+
+    .intro-container {
+        position: absolute;
         top: 30%;
         left: 30%;
     }
@@ -49,27 +70,26 @@ $background-url: url("/portfolio/images/about_bg.png");
     }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-    .home-container {
-        background: $background-url;
-        background-position: center center;
-        background-attachment: fixed;
-        height: 100vh;
-        width: 100vw;
-        background-size: cover;
-    }
-}
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .home-container {
         background: $background-url;
         background-position: center center;
         background-attachment: fixed;
-        height: 100vh;
+        height: calc(100vh - 66px);
         width: 100vw;
         background-size: cover;
+    }
+
+    .intro-container {
+        position: absolute;
+        top: 30%;
+        left: 30%;
+    }
+
+    .img-item {
+        height: 150px;
+        width: 150px;
     }
 }
 
@@ -79,8 +99,51 @@ $background-url: url("/portfolio/images/about_bg.png");
         background: $background-url;
         background-position: center center;
         background-attachment: fixed;
-        height: 100vh;
+        height: calc(100vh - 66px);
         width: 100vw;
         background-size: cover;
     }
+
+    .intro-container {
+        position: absolute;
+        top: 25%;
+        left: 35%;
+    }
+
+    .img-item {
+        height: 150px;
+        width: 150px;
+    }
 }
+
+.intro-line-1 {
+    color: white;
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-size: 45px;
+}
+
+//------------ Text changing animation ---------------
+
+#spin {
+    color: red;
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-size: 45px;
+}
+
+#spin::after {
+    content:"";
+    animation: changeLetter 2s linear infinite;
+}
+
+@keyframes changeLetter {
+    0% {
+        content: "software engineer";
+    }
+    100% {
+        content: "frontend developer";
+    }
+}
+
+// ---------------------------------------------------
